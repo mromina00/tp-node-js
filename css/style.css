@@ -12,16 +12,24 @@ header {
     background-color: #e0e0e0;
     max-width: 1000px;
     margin: auto;
+    border-radius: 5px;
+
   }
 
 .imagen {
     margin: 10px;
     padding: 0px;
-    
+        
+}
+img {
+    border-radius: 5px;
 }
 .descripcion {
     margin: 10px;
-    padding: 0px;
+    padding: 10px;
     background-color: #9c9c9c;
-    width: 50%;
+    width: 328px;
+    /*max-width: 50%;*/
+    border-radius: 5px;
+    
 }
