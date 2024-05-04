@@ -40,6 +40,7 @@ header {
 }
 img {
     border-radius: 5px;
+    width: 100%;
 }
 img:hover{
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
