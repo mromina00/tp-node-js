@@ -1,0 +1,38 @@
+const listaDeAutosJSON = [
+    {
+        "_id": 1,
+        "foto": "ram1500.jpg",
+        "nombre": "Ram 1500",
+        "descripcion": "Laramie 5.7 4x4 C/D",
+        "Año": 2014,
+        "kilometraje": 104000,
+        "precio": 35900000,
+    },
+    {
+        "_id": 2,
+        "foto": "audiq3.jpg",
+        "nombre": "Audi Q3",
+        "descripcion": "1.4T Sport 150cv",
+        "Año": 2019,
+        "kilometraje": 26000,
+        "precio": 34900000,
+    },
+    {
+        "_id": 3,
+        "foto": "fiattoro.jpg",
+        "nombre": "Fiat Toro",
+        "descripcion": "Volcano 2.0TDI 4x4 AT Pack Premium",
+        "Año": 2017,
+        "kilometraje": 110000,
+        "precio": 22900000,
+    },
+    {
+        "_id": 4,
+        "foto": "renaultkangoo.jpg",
+        "nombre": "Renalut Kangoo",
+        "descripcion": "Express 1.6 Confort SCE (L18)",
+        "Año": 2024,
+        "kilometraje": 0,
+        "precio": 21900000,
+    },
+];
