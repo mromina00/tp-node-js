@@ -1,4 +1,12 @@
 const catDeAutos = document.getElementById("catalogoDeAutos")
+const anioMinimo = document.getElementById("anioMin")
+console.log(anioMinimo)
+const anioMaximo = document.getElementById("anioMax")
+console.log(anioMaximo)
+const precioMinimo = document.getElementById("precioMin")
+console.log(precioMinimo)
+const precioMaximo = document.getElementById("precioMax")
+console.log(precioMaximo)
 
 /*
  <article class="producto">
@@ -57,6 +65,11 @@ function mostrarAutos(listaJason){
         catDeAutos.appendChild(salto)
 
     }
+}
+
+function filtrar(amin, amax, pmin, pmax){
+    const filtrados = listaDeAutosJSON.filter(art => art.anio >= amin && art.anio <= amax && art.precio >= pmin && art.precio <= pmax);
+    mostrarAutos(filtrados)
 }
 
 mostrarAutos(listaDeAutosJSON)

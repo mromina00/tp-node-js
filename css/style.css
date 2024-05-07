@@ -31,7 +31,7 @@ header {
     margin-left: 50px;
 }
 .sidenav a{
-    padding: 8px 8px 8px 32px;
+    padding: 8px 8px 8px 16px;
     text-decoration: none;
     font-size: 20px;
     color: #fafafa;
@@ -39,14 +39,27 @@ header {
     transition: 0.3s;
 }
 .sidenav h3{
-    padding: 8px 8px 8px 32px;
+    padding: 8px 8px 8px 8px;
+    margin: auto;
     text-decoration: none;
     font-size: 20px;
     color: #fafafa;
     display: block;
     transition: 0.3s;
 }
-
+.sidenav h4{
+    padding: 8px 8px 8px 8px;
+    margin: auto;
+    text-decoration: none;
+    color: #fafafa;
+    display: block;
+    transition: 0.3s;
+}
+.sidenav input{
+    max-width: 100px;
+    padding: 8px 8px 8px 8px;
+    margin: 8px;
+}
 
 .producto {
     display: flex;
