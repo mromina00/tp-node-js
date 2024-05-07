@@ -61,7 +61,7 @@ function mostrarAutos(listaJason){
         articulo.appendChild(descripcionSection);
                         
 
-        catDeAutos.appendChild(articulo)
+        catDeAutos.appendChild(articulo);
         catDeAutos.appendChild(salto)
 
     }
@@ -70,6 +70,13 @@ function mostrarAutos(listaJason){
 function filtrar(amin, amax, pmin, pmax){
     const filtrados = listaDeAutosJSON.filter(art => art.anio >= amin && art.anio <= amax && art.precio >= pmin && art.precio <= pmax);
     mostrarAutos(filtrados)
+}
+function reset(){
+    anioMinimo.value=2000;
+    anioMaximo.value=2024;
+    precioMinimo.value=0;
+    precioMaximo.value=100000000;
+    mostrarAutos(listaDeAutosJSON)
 }
 
 mostrarAutos(listaDeAutosJSON)
