@@ -9,15 +9,22 @@
 
 <body>
     <header>
-        <H1>CATALOGO DE VEHÍCULOS</H1>
+        <H2>CATALOGO DE VEHÍCULOS</H2>
     </header>
     <main>
-        <!--<div class="sidenav">
-            <br><br><br><br><br><br><br><br>
-            <a href="#">Link</a>
-            <a href="#">Link</a>
-            <a href="#">Link</a>
-        </div>-->
+        
+        <span style="font-size:20px;cursor:pointer" onclick="openNav()">&#9776; Filtrar</span>
+
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <h3>Año</h3>
+            <input type="number" id="aniomin" name="aniomin" value=2000 min=2000>
+            <input type="number" value=2024 max=2024 min=2000>
+            <h3>Precio</h3>
+            <input type="number" >
+            <input type="number" >
+            
+        </div>
         
         <div class="catalogo" id="catalogoDeAutos">
           
@@ -38,6 +45,7 @@
         
       </main>
 
+      <script src="../js/sidenav.js"></script>
       <script src="../js/datos.js"></script>
       <script src="../js/catalogovanilla.js"></script>
 
