@@ -9,19 +9,31 @@
 
 <body>
     <header>
-        <H1>CATALOGO DE VEHÍCULOS</H1>
+        <H2>CATALOGO DE VEHÍCULOS</H2>
     </header>
     <main>
-        <!--<div class="sidenav">
-            <br><br><br><br><br><br><br><br>
-            <a href="#">Link</a>
-            <a href="#">Link</a>
-            <a href="#">Link</a>
-        </div>-->
+        
+        <span style="font-size:20px;cursor:pointer" onclick="openNav()">&#9776; Filtrar</span>
+
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <h3>Año</h3>
+            <h4>Desde:</h4>
+            <input type="number" id="anioMin" name="aniomin" value=2000 min=2000 max=2024>
+            <h4>Hasta:</h4>
+            <input type="number" id="anioMax"value=2024 max=2024 min=2000>
+            <h3>Precio</h3>
+            <h4>Desde:</h4>
+            <input type="number" id="precioMin" value=0 min=0>
+            <h4>Hasta:</h4>
+            <input type="number" id="precioMax" value=9000000000 min=0>
+            <input type="button" value="Filtrar" onclick="filtrar(anioMinimo.value, anioMaximo.value, precioMinimo.value, precioMaximo.value)">
+            <input type="button" value="Borrar" onclick="reset()">
+        </div>
         
         <div class="catalogo" id="catalogoDeAutos">
           
-            <article class="producto">
+            <!--<article class="producto">
                 <section class="imagen">
                     <img src="../img/ram1500.jpg" alt="ram1500">
                 </section>  
@@ -32,48 +44,15 @@
                     <p class="precio">$35.900.000</p>
                 </section>
             </article>
-            <br>
-            <article class="producto">
-                <section class="imagen">
-                    <img src="../img/audiq3.jpg" alt="audiq3">
-                </section>  
-                <section class="descripcion">
-                    <h2>Audi Q3</h2>
-                    <p>1.4T Sport 150cv</p>
-                    <p>2019 - 26.000 KM</p>
-                    <p class="precio">$34.900.000</p>
-                </section>
-            </article>
-            <br>
-            <article class="producto">
-                <section class="imagen">
-                    <img src="../img/fiattoro.jpg" alt="fiattoro">
-                </section>  
-                <section class="descripcion">
-                    <h2>Fiat Toro</h2>
-                    <p>Volcano 2.0TDI 4x4 AT Pack Premium</p>
-                    <p>2017 - 110.000 KM</p>
-                    <p class="precio">$22.900.000</p>
-                </section>
-            </article>
-            <br>
-            <article class="producto">
-                <section class="imagen">
-                    <img src="../img/renaultkangoo.jpg" alt="renaultkangoo">
-                </section>  
-                <section class="descripcion">
-                    <h2>Renalut Kangoo</h2>
-                    <p>Express 1.6 Confort SCE (L18)</p>
-                    <p>2024 - 0 KM</p>
-                    <p class="precio">$21.900.000</p>
-                </section>
-            </article>
+            <br>-->
           
         </div>
         
       </main>
 
-
+      <script src="../js/sidenav.js"></script>
+      <script src="../js/datos.js"></script>
+      <script src="../js/catalogovanilla.js"></script>
 
 </body>
 </html>

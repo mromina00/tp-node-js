@@ -8,19 +8,58 @@ header {
     color: #fafafa;
     text-align: center;
     margin: 0px;
-    padding: 10px;
+    padding: 5px;
 }
 
 .sidenav {
     height: 100%;
-    width: 200px;
+    width: 0;
     position: fixed;
     z-index: 1;
-    top: 0;
+    top: 0px;
     left: 0;
     background-color: #141414;
     overflow-x: hidden;
-  }
+    transition: 0.5s;
+    padding-top: 150px;
+}
+.sidenav .closebtn {
+    position: absolute;
+    top: 60px;
+    right: 0px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+.sidenav a{
+    padding: 8px 8px 8px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #fafafa;
+    display: block;
+    transition: 0.3s;
+}
+.sidenav h3{
+    padding: 8px 8px 8px 8px;
+    margin: auto;
+    text-decoration: none;
+    font-size: 20px;
+    color: #fafafa;
+    display: block;
+    transition: 0.3s;
+}
+.sidenav h4{
+    padding: 8px 8px 8px 8px;
+    margin: auto;
+    text-decoration: none;
+    color: #fafafa;
+    display: block;
+    transition: 0.3s;
+}
+.sidenav input{
+    max-width: 100px;
+    padding: 8px 8px 8px 8px;
+    margin: 8px;
+}
 
 .producto {
     display: flex;
@@ -30,7 +69,7 @@ header {
     max-width: 1000px;
     margin: auto;
     border-radius: 5px;
-
+    
   }
 
 .imagen {
