@@ -1,12 +1,9 @@
 const catDeAutos = document.getElementById("catalogoDeAutos")
 const anioMinimo = document.getElementById("anioMin")
-console.log(anioMinimo)
 const anioMaximo = document.getElementById("anioMax")
-console.log(anioMaximo)
 const precioMinimo = document.getElementById("precioMin")
-console.log(precioMinimo)
 const precioMaximo = document.getElementById("precioMax")
-console.log(precioMaximo)
+
 
 /*
  <article class="producto">
@@ -24,7 +21,16 @@ console.log(precioMaximo)
 */
 
 function mostrarAutos(listaJason){
+    
     catDeAutos.innerHTML = ""
+
+    if (listaJason.length === 0){
+        alert("No hay autos con ese criterio de busqueda");
+        /*const noHayAutos = document.createElement('h2');
+        noHayAutos.innerHTML = "No hay autos con este criterio de busqueda";
+        catDeAutos.appendChild(noHayAutos);*/
+    }
+
     for (let i = 0; i < listaJason.length; i++){
         const lista =listaJason[i];
 
