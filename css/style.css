@@ -1,15 +1,84 @@
-body{
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+*{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
 }
 
-header {
-    background-color: #141414;
-    color: #fafafa;
-    text-align: center;
-    margin: 0px;
-    padding: 5px;
+body{
+    height: 100vh;
 }
+
+.site{
+    position: relative;
+    height: 100vh;
+}
+
+.header {
+    background-color: #141414;
+    height: 80px;
+    width: 100%;
+    position: absolute;
+    padding: 1em 2em;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    margin: auto;
+    max-width: 1200px;
+}
+
+.logo img{
+    height: 2em;
+    width: auto;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.logo img:hover{
+    transform: scale(1.1);
+}
+
+.navbar{
+    display: flex;
+    gap: 3em;
+    width: 100%;
+    justify-content: center;
+}
+
+.navbar li{
+    transition: all 0.3s;
+}
+
+.navbar li:hover{
+    transform: scale(1.1);
+}
+
+.navbar a{
+    color: #9c9c9c;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.navbar a:hover{
+    color: #e0e0e0;
+    transition: 0.5s;
+}
+
+
 
 .sidenav {
     height: 100%;
@@ -77,14 +146,14 @@ header {
     padding: 0px;
         
 }
-img {
+/* img {
     border-radius: 5px;
     width: 100%;
 }
 img:hover{
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
     transform: scale(1.1); 
-}
+} */
 .descripcion {
     margin: 10px;
     padding: 10px;
