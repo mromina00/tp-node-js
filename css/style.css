@@ -38,6 +38,7 @@ body{
     height: 50px;
     margin: auto;
     max-width: 1200px;
+    flex-wrap: nowrap;
 }
 
 .logo img{
@@ -53,9 +54,8 @@ body{
 
 .navbar{
     display: flex;
-    gap: 3em;
-    width: 100%;
-    justify-content: center;
+    gap: 5em;
+    margin: 0;
 }
 
 .navbar li{
@@ -69,8 +69,9 @@ body{
 .navbar a{
     color: #9c9c9c;
     text-transform: uppercase;
-    font-size: 13px;
+    font-size: 1em;
     font-weight: 600;
+    text-decoration: none;
 }
 
 .navbar a:hover{
@@ -79,6 +80,32 @@ body{
 }
 
 
+/* Estilos del carrousel */
+.d-item{
+    height: 100vh;
+    object-fit: cover;
+    filter: brightness(0.6);
+}
+
+
+
+
+.main{
+    position: relative;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 80px auto;
+}
+
+.main h1{
+    text-align: center;
+    padding-top: 30px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
 
 .sidenav {
     height: 100%;
@@ -130,30 +157,39 @@ body{
     margin: 8px;
 }
 
+.catalogo{
+    width: 100%;
+}
+
 .producto {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     background-color: #e0e0e0;
-    max-width: 1000px;
     margin: auto;
     border-radius: 5px;
-    
   }
+
+.filter{
+    width: 100%;
+    margin-bottom: 10px;
+}
 
 .imagen {
     margin: 10px;
     padding: 0px;
-        
 }
-/* img {
+.imagen img {
     border-radius: 5px;
-    width: 100%;
+    width: 328px;
+    height: 230px;
+    object-fit: cover;
+    transition: all .3s ease;
 }
-img:hover{
+.imagen img:hover{
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
     transform: scale(1.1); 
-} */
+}
 .descripcion {
     margin: 10px;
     padding: 10px;
@@ -163,3 +199,84 @@ img:hover{
     border-radius: 5px;
     
 }
+
+
+.footer{
+    background: #141414;
+    color: #e0e0e0;
+    padding: 3em 0 2em;
+}
+
+.footer-container{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+}
+
+.footer-logo{
+    width: 20%;
+}
+
+.footer-logo img{
+    height: 2em;
+    cursor: pointer;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.footer-col{
+    width: 20%;
+    padding: 0 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-col h3{
+    font-size: 1em;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 1em;
+}
+
+.footer-col a, .footer-col p{
+    color: #9c9c9c;
+}
+
+.footer-col a{
+    text-decoration: none;
+    transition: all .3s ease;
+}
+
+.footer-col a:hover{
+    color: #a52a2a;
+    padding-left: 5px;
+}
+
+.footer-col a:not(:last-child),
+.footer-col p:not(:last-child){
+    margin-bottom: 10px;
+}
+
+.footer-col span{
+    margin-bottom: 5px;
+}
+
+.redes a{
+    font-size: 1.5em;
+    display: inline-block;
+}
+
+.redes a:not(:last-child){
+    margin-right: 0.7em;
+}
+
+.redes a:hover{
+    transform: scale(1.2);
+    color: #a52a2a;
+}
+

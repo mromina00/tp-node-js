@@ -1,40 +1,43 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=ç, initial-scale=1.0">
-    <title>Catalogo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/favicon/favicon.ico" type="image/x-icon">
+    <title>Dangel Motors - Vehículos</title>
     <link rel="stylesheet" href="../css/style.css">
+    <script defer src="../js/navbar.js"></script>
+    <script defer src="../js/footer.js"></script>
 </head>
 
 <body>
-    <header>
-        <H2>CATALOGO DE VEHÍCULOS</H2>
-    </header>
-    <main>
+    <header class="header"></header>
+    <main class="main">
+        <h1>Catálogo de Vehículos</h1>
+        <div class="filter">
+            <span style="font-size:20px;cursor:pointer" onclick="openNav()">&#9776; Filtrar</span>
+        </div>
         
-        <span style="font-size:20px;cursor:pointer" onclick="openNav()">&#9776; Filtrar</span>
-
         <div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <h3>Año</h3>
             <h4>Desde:</h4>
             <input type="number" id="anioMin" name="aniomin" value=2000 min=2000 max=anioMax.value>
             <h4>Hasta:</h4>
-            <input type="number" id="anioMax"value=2020 max=2024 min=2000>
+            <input type="number" id="anioMax" value=2020 max=2024 min=2000>
             <h3>Precio</h3>
             <h4>Desde:</h4>
             <input type="number" id="precioMin" value=0 min=0>
             <h4>Hasta:</h4>
             <input type="number" id="precioMax" value=9.000.000.000 min=0>
-            <input type="button" value="Filtrar" onclick="filtrar(anioMinimo.value, anioMaximo.value, precioMinimo.value, precioMaximo.value)">
+            <input type="button" value="Filtrar"
+                onclick="filtrar(anioMinimo.value, anioMaximo.value, precioMinimo.value, precioMaximo.value)">
             <input type="button" value="Borrar" onclick="reset()">
         </div>
 
-
-        
         <div class="catalogo" id="catalogoDeAutos">
-          
+
             <!--<article class="producto">
                 <section class="imagen">
                     <img src="../img/ram1500.jpg" alt="ram1500">
@@ -47,14 +50,15 @@
                 </section>
             </article>
             <br>-->
-          
-        </div>
-        
-      </main>
 
-      <script src="../js/sidenav.js"></script>
-      <script src="../js/datos.js"></script>
-      <script src="../js/catalogovanilla.js"></script>
+        </div>
+
+    </main>
+    <footer class="footer"></footer>
+    <script src="../js/sidenav.js"></script>
+    <script src="../js/datos.js"></script>
+    <script src="../js/catalogovanilla.js"></script>
 
 </body>
+
 </html>

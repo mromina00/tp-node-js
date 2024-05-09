@@ -1,7 +1,7 @@
 const listaDeAutosJSON = [
     {
         "_id": 1,
-        "foto": "ram1500.jpg",
+        "foto": "ram1500.webp",
         "nombre": "Ram 1500",
         "descripcion": "Laramie 5.7 4x4 C/D",
         "anio": 2014,
