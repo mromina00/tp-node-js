@@ -1,14 +1,110 @@
-body{
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+*{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
 }
 
-header {
+body{
+    height: 100vh;
+}
+
+.site{
+    position: relative;
+    height: 100vh;
+}
+
+.header {
     background-color: #141414;
-    color: #fafafa;
+    height: 80px;
+    width: 100%;
+    position: absolute;
+    padding: 1em 2em;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    margin: auto;
+    max-width: 1200px;
+    flex-wrap: nowrap;
+}
+
+.logo img{
+    height: 2em;
+    width: auto;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.logo img:hover{
+    transform: scale(1.1);
+}
+
+.navbar{
+    display: flex;
+    gap: 5em;
+    margin: 0;
+}
+
+.navbar li{
+    transition: all 0.3s;
+}
+
+.navbar li:hover{
+    transform: scale(1.1);
+}
+
+.navbar a{
+    color: #9c9c9c;
+    text-transform: uppercase;
+    font-size: 1em;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.navbar a:hover{
+    color: #e0e0e0;
+    transition: 0.5s;
+}
+
+
+/* Estilos del carrousel */
+.d-item{
+    height: 100vh;
+    object-fit: cover;
+    filter: brightness(0.6);
+}
+
+
+
+
+.main{
+    position: relative;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 80px auto;
+}
+
+.main h1{
     text-align: center;
-    margin: 0px;
-    padding: 5px;
+    padding-top: 30px;
+    text-transform: uppercase;
+    font-weight: 600;
 }
 
 .sidenav {
@@ -61,27 +157,36 @@ header {
     margin: 8px;
 }
 
+.catalogo{
+    width: 100%;
+}
+
 .producto {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     background-color: #e0e0e0;
-    max-width: 1000px;
     margin: auto;
     border-radius: 5px;
-    
   }
+
+.filter{
+    width: 100%;
+    margin-bottom: 10px;
+}
 
 .imagen {
     margin: 10px;
     padding: 0px;
-        
 }
-img {
+.imagen img {
     border-radius: 5px;
-    width: 100%;
+    width: 328px;
+    height: 230px;
+    object-fit: cover;
+    transition: all .3s ease;
 }
-img:hover{
+.imagen img:hover{
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
     transform: scale(1.1); 
 }
@@ -94,3 +199,84 @@ img:hover{
     border-radius: 5px;
     
 }
+
+
+.footer{
+    background: #141414;
+    color: #e0e0e0;
+    padding: 3em 0 2em;
+}
+
+.footer-container{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+}
+
+.footer-logo{
+    width: 20%;
+}
+
+.footer-logo img{
+    height: 2em;
+    cursor: pointer;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.footer-col{
+    width: 20%;
+    padding: 0 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-col h3{
+    font-size: 1em;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 1em;
+}
+
+.footer-col a, .footer-col p{
+    color: #9c9c9c;
+}
+
+.footer-col a{
+    text-decoration: none;
+    transition: all .3s ease;
+}
+
+.footer-col a:hover{
+    color: #a52a2a;
+    padding-left: 5px;
+}
+
+.footer-col a:not(:last-child),
+.footer-col p:not(:last-child){
+    margin-bottom: 10px;
+}
+
+.footer-col span{
+    margin-bottom: 5px;
+}
+
+.redes a{
+    font-size: 1.5em;
+    display: inline-block;
+}
+
+.redes a:not(:last-child){
+    margin-right: 0.7em;
+}
+
+.redes a:hover{
+    transform: scale(1.2);
+    color: #a52a2a;
+}
+
