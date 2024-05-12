@@ -25,10 +25,11 @@ function mostrarAutos(listaJason){
     catDeAutos.innerHTML = ""
 
     if (listaJason.length === 0){
-        alert("No hay autos con ese criterio de busqueda");
-        /*const noHayAutos = document.createElement('h2');
+        alert("No hay autos con este criterio de busqueda");
+        const noHayAutos = document.createElement('h2');
+        noHayAutos.style.marginLeft = "10px";
         noHayAutos.innerHTML = "No hay autos con este criterio de busqueda";
-        catDeAutos.appendChild(noHayAutos);*/
+        catDeAutos.appendChild(noHayAutos);
     }
 
     for (let i = 0; i < listaJason.length; i++){
