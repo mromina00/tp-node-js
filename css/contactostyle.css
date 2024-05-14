@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+:root {
+    --negro: #141414;
+    --blanco: #fafafa;
+    --gris-oscuro: #3b3b3b;
+    --gris: #7a7a7a;
+    --gris-claro: #e0e0e0;
+    --bordo: #a52a2a;
+    --fuente-titulo: 'Montserrat', sans-serif;
+    --fuente-parrafo: 'Hind Madurai', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito Sans';
+    font-size: 1em;
+    text-decoration: none;
+    
+}
+
+
+.contacto-container {
+
+    display: flex;
+    flex-direction: column;
+    background-color: var(--blanco);
+    height: 800px;
+    margin: 100px 40px;
+    justify-content: space-evenly;
+}
+
+.contacto-container h2 {
+    text-align: center;
+    font-size: 3em;
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+
+.caja-contacto {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 5fr 4fr;
+    grid-template-areas: "form info"
+        "form map";
+    gap: 20px;
+    margin-left: 150px;
+    margin-right: 150px;
+    box-shadow: 0 5px 35px rgba(20, 20, 20, 0.15);
+}
+
+.form {
+    grid-area: form;
+}
+
+.info {
+    grid-area: info;
+}
+
+.map {
+    grid-area: map;
+}
+
+.contact {
+    padding: 40px;
+    box-shadow: 0 5px 35px rgba(20, 20, 20, 0.15);
+}
+
+.contact h3 {
+    text-align: center;
+    font-size: 1.5em;
+    padding-bottom: 10px;
+}
+
+/* Formulario */
+.info-caja {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.input-caja {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    width: 100%;
+}
+.input-caja .btn{
+    background-color: var(--gris-claro);
+    color: var(--negro);
+    width: 30%;
+    transition: 0.4s ease;
+}
+
+.input-caja .btn:hover{
+    background-color: var(--bordo);
+    color: white;
+    transform: scale(1.05,1.05);
+}
+
+
+textarea {
+    resize: none;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 0.2em solid var(--gris-claro);
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+}
+
+/* Info */
+.info-container {
+    background-color: var(--negro);
+    color: white;
+    text-decoration: none;
+    overflow-y: scroll;
+}
+
+.info-container ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    margin: 20px;
+
+}
+.info-caja{
+    display: flex;
+    align-items: center;
+}
+.info-caja span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--gris-claro);
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    overflow: auto;
+}
+.info-caja p,a{
+    padding-left: 10px;
+}
+.info-caja span i{
+   
+    font-size: 20px;
+    color: var(--gris-oscuro);
+
+}
+
+.info-container ul li i{
+    font-size: 30px;
+}
+.info-caja a{
+    color: var(--gris-claro);
+}
+/* mapita */
+.map-container {
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 5px 35px rgba(20, 20, 20, 0.15);
+}
+/* VER COMO MIERDA ACOMODAR EL MAPAAAAAAAAAAAAAAAAAAAAAAAAA */
+
+
+
+@media screen and (max-width: 480px) {
+    .contacto-titulo h2{
+        font-size: 2em;
+    }
+    .caja-contacto{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+    }
+    .info-container{
+        overflow: visible;
+    }
+}
+
+
+@media screen and (min-width: 481px) and (max-width:768px) {
+    .contacto-titulo h2{
+        font-size: 2em;
+    }
+    .caja-contacto{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+    }
+    .info-container{
+        overflow: visible;
+    }
+   
+}
+
+@media screen and (min-width: 769px) and (max-width:1279px) {
+}
+
+@media screen and (min-width: 1280px){
+}
+
