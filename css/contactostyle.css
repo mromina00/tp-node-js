@@ -7,8 +7,6 @@
     --gris: #7a7a7a;
     --gris-claro: #e0e0e0;
     --bordo: #a52a2a;
-    --fuente-titulo: 'Montserrat', sans-serif;
-    --fuente-parrafo: 'Hind Madurai', sans-serif;
 }
 
 * {
@@ -18,9 +16,69 @@
     font-family: 'Nunito Sans';
     font-size: 1em;
     text-decoration: none;
+    list-style: none;
     
 }
 
+.header2 {
+    background-color: #141414;
+    height: 80px;
+    width: 100%;
+    position: absolute;
+    padding: 1em 2em;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    margin: auto;
+    max-width: 1200px;
+    flex-wrap: nowrap;
+}
+
+.logo img{
+    height: 2em;
+    width: auto;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.logo img:hover{
+    transform: scale(1.1);
+}
+
+.navbar{
+    display: flex;
+    gap: 5em;
+    margin: 0;
+}
+
+.navbar li{
+    transition: all 0.3s;
+}
+
+.navbar li:hover{
+    transform: scale(1.1);
+}
+
+.navbar a{
+    color: #9c9c9c;
+    text-transform: uppercase;
+    font-size: 1em;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.navbar a:hover{
+    color: #e0e0e0;
+    transition: 0.5s;
+}
 
 .contacto-container {
 
@@ -147,7 +205,7 @@ textarea:focus {
     border-radius: 50%;
     overflow: auto;
 }
-.info-caja p,a{
+.info-caja p, .info-caja a{
     padding-left: 10px;
 }
 .info-caja span i{
@@ -171,6 +229,84 @@ textarea:focus {
 }
 /* VER COMO MIERDA ACOMODAR EL MAPAAAAAAAAAAAAAAAAAAAAAAAAA */
 
+.footer{
+    background: #141414;
+    color: #e0e0e0;
+    padding: 3em 0 2em;
+}
+
+.footer-container{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+}
+
+.footer-logo{
+    width: 20%;
+}
+
+.footer-logo img{
+    height: 2em;
+    cursor: pointer;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.footer-col{
+    width: 20%;
+    padding: 0 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-col h3{
+    font-size: 1em;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 1em;
+}
+
+.footer-col a, .footer-col p{
+    color: #9c9c9c;
+}
+
+.footer-col a{
+    text-decoration: none;
+    transition: all .3s ease;
+}
+
+.footer-col a:hover{
+    color: #a52a2a;
+    padding-left: 5px;
+}
+
+.footer-col a:not(:last-child),
+.footer-col p:not(:last-child){
+    margin-bottom: 10px;
+}
+
+.footer-col span{
+    margin-bottom: 5px;
+}
+
+.redes a{
+    font-size: 1.5em;
+    display: inline-block;
+}
+
+.redes a:not(:last-child){
+    margin-right: 0.7em;
+}
+
+.redes a:hover{
+    transform: scale(1.2);
+    color: #a52a2a;
+}
 
 
 @media screen and (max-width: 480px) {
