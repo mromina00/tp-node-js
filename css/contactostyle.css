@@ -80,6 +80,53 @@
     transition: 0.5s;
 }
 
+.navtoggle{
+    color: #9c9c9c;
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+    display: none;
+}
+
+/* Menú Desplegable
+=================================================== */
+.menu-desplegable{
+    position: absolute;
+    right: 2em;
+    top: 80px;
+    width: 300px;
+    height: 0;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(15px);
+    overflow: hidden;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    display: none;
+}
+
+.menu-desplegable.open{
+    height: auto;
+}
+
+.menu-desplegable li{
+    padding: 0.7em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.menu-desplegable li:hover,
+.menu-desplegable li:active{
+    background-color: rgba(127, 127, 127, 0.4);
+    transition: 0.5s;
+}
+
+.menu-desplegable li a{
+    color: #e0e0e0;
+    font-size: 1em;
+}
+
 .contacto-container {
 
     display: flex;
@@ -308,6 +355,67 @@ textarea:focus {
     color: #a52a2a;
 }
 
+@media screen and (max-width: 1280px){
+    /* Barra de Navegación */
+    .nav{
+        justify-content: flex-end;
+        gap: 40%;
+    }
+    
+    .navbar{
+        display: none;
+    }
+
+    .navtoggle{
+        display: block;
+    }
+
+    .menu-desplegable{
+        display: block;
+    }
+
+    /* Footer */
+    .footer-logo{
+        width: 40%;
+        padding-left: 40px;
+    }
+
+    .footer-col{
+        width: 40%;
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width: 768px){
+    .contacto-titulo h2{
+        font-size: 2em;
+    }
+    .caja-contacto{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+    }
+    .info-container{
+        overflow: visible;
+    }
+
+    .footer-logo{
+        width: 40%;
+        padding-left: 40px;
+    }
+
+    .row{
+        justify-content: space-around;
+    }
+
+    .footer-col{
+        width: 40%;
+        margin-bottom: 30px;
+    }
+}
 
 @media screen and (max-width: 480px) {
     .contacto-titulo h2{
@@ -324,30 +432,27 @@ textarea:focus {
     .info-container{
         overflow: visible;
     }
-}
 
-
-@media screen and (min-width: 481px) and (max-width:768px) {
-    .contacto-titulo h2{
-        font-size: 2em;
+    .footer{
+        padding: 2em 0 1em;
     }
-    .caja-contacto{
-        display: flex;
+    .footer-container{
         flex-direction: column;
-        flex-wrap: nowrap;
-        width: 100%;
-        height: 100%;
-        margin: 0;
+        align-items: center;
+        justify-content: space-between;
     }
-    .info-container{
-        overflow: visible;
+
+    .footer-col{
+        padding: 0;
     }
-   
-}
 
-@media screen and (min-width: 769px) and (max-width:1279px) {
-}
+    .footer-logo{
+        padding: 0;
+        margin-bottom: 2em;
+    }
 
-@media screen and (min-width: 1280px){
+    .redes a:not(:last-child){
+        margin-right: 0.4em;
+    }
 }
 
