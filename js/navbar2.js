@@ -18,7 +18,7 @@ let cad2 = `
         <div class="li">
             <li><a href="../index.html">Inicio</a></li>
             <li><a href="./nosotros.html">Nosotros</a></li>
-            <li><a href="./vehiculos.html">Vehículos</a></li>
+            <li><a href="./catalogo.html">Vehículos</a></li>
             <li><a href="./contacto.html">Contacto</a></li>
         </div>
     </div>
