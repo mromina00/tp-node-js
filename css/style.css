@@ -476,7 +476,8 @@ body.overlay-active::before {
     color: #a52a2a;
 }
 
-@media screen and (max-width: 1280px){
+
+@media(max-width: 768px){
 
     /* Barra de Navegación */
     .nav{
@@ -493,9 +494,10 @@ body.overlay-active::before {
     }
 
     .menu-desplegable{
+        left: 2em;
+        width: unset;
         display: block;
     }
-
 
     .nosotros{
         height: 100%;
@@ -503,7 +505,7 @@ body.overlay-active::before {
     }
 
     .nosotros .titulo{
-        font-size: 150%;
+        font-size: 20px;
         margin: 30px 0;
     }
 
@@ -523,34 +525,6 @@ body.overlay-active::before {
 
     .nosotros .boton{
         margin-bottom: 40px;
-    }
-
-    .nosotros .contenido .right .tarjetas-container .tarjeta i{
-        font-size: 45px;
-    }
-
-     /* Footer */
-     .footer-logo{
-        width: 40%;
-        padding-left: 40px;
-    }
-
-    .footer-col{
-        width: 40%;
-        margin-bottom: 30px;
-    }
-
-}
-
-@media(max-width: 768px){
-
-    .nosotros .titulo{
-        font-size: 20px;
-    }
-
-    .menu-desplegable{
-        left: 2em;
-        width: unset;
     }
 
     .nosotros .contenido .right .tarjetas-container .tarjeta i{
