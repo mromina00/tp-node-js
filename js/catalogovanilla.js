@@ -20,7 +20,7 @@ const precioMaximo = document.getElementById("precioMax")
 */
 
 function mostrarAutos(listaJason){
-    
+    console.log (listaJason);
     catDeAutos.innerHTML = ""
 
     if (listaJason.length === 0){
