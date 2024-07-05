@@ -3,7 +3,7 @@ const anioMinimo = document.getElementById("anioMin")
 const anioMaximo = document.getElementById("anioMax")
 const precioMinimo = document.getElementById("precioMin")
 const precioMaximo = document.getElementById("precioMax")
-
+let listaDeAutos
 /*
  <article class="producto">
         <section class="imagen">
@@ -20,7 +20,9 @@ const precioMaximo = document.getElementById("precioMax")
 */
 
 function mostrarAutos(listaJason){
-    
+    listaDeAutos = listaJason
+    console.log(listaDeAutos)
+
     catDeAutos.innerHTML = ""
 
     if (listaJason.length === 0){
@@ -74,7 +76,7 @@ function mostrarAutos(listaJason){
 }
 
 function filtrar(amin, amax, pmin, pmax){
-    const filtrados = data.filter(art => art.anio >= amin && art.anio <= amax && art.precio >= pmin && art.precio <= pmax);
+    const filtrados = listaDeAutos.filter(art => art.anio >= amin && art.anio <= amax && art.precio >= pmin && art.precio <= pmax);
     mostrarAutos(filtrados)
 }
 function reset(){
@@ -82,12 +84,13 @@ function reset(){
     anioMaximo.value=2024;
     precioMinimo.value=0;
     precioMaximo.value=100000000;
-    mostrarAutos(data)
+    cargarAutos()
 }
 
+function cargarAutos(){
+    fetch('http://grupo11.alwaysdata.net/autos')
+        .then(response => response.json())
+        .then(data => mostrarAutos(data))
+}
 
-fetch('http://grupo11.alwaysdata.net/autos')
-  .then(response => response.json())
-  .then(data => mostrarAutos(data))
-
-  //mostrarAutos(listaDeAutos)
+cargarAutos()
