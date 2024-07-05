@@ -86,7 +86,7 @@ function reset(){
 }
 
 
-fetch('http://grupo11.alwaysdata.net/autos')
+fetch('https://grupo11.alwaysdata.net/autos')
   .then(response => response.json())
   .then(data => mostrarAutos(data))
 
