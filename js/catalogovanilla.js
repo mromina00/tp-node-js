@@ -44,7 +44,7 @@ function mostrarAutos(listaJason){
                 
 
         const imagen = document.createElement('img');
-        imagen.setAttribute('src', `http://grupo11.alwaysdata.net${lista.foto}`);
+        imagen.setAttribute('src', `https://grupo11.alwaysdata.net${lista.foto}`);
         imagen.innerHTML = lista.foto;
         const nombre = document.createElement('h2');
         nombre.innerHTML = lista.nombre;
