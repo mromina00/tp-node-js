@@ -4,7 +4,6 @@ const anioMaximo = document.getElementById("anioMax")
 const precioMinimo = document.getElementById("precioMin")
 const precioMaximo = document.getElementById("precioMax")
 
-
 /*
  <article class="producto">
         <section class="imagen">
@@ -45,7 +44,7 @@ function mostrarAutos(listaJason){
                 
 
         const imagen = document.createElement('img');
-        imagen.setAttribute('src', `../img/${lista.foto}`);
+        imagen.setAttribute('src', `http://grupo11.alwaysdata.net${lista.foto}`);
         imagen.innerHTML = lista.foto;
         const nombre = document.createElement('h2');
         nombre.innerHTML = lista.nombre;
@@ -75,7 +74,7 @@ function mostrarAutos(listaJason){
 }
 
 function filtrar(amin, amax, pmin, pmax){
-    const filtrados = listaDeAutosJSON.filter(art => art.anio >= amin && art.anio <= amax && art.precio >= pmin && art.precio <= pmax);
+    const filtrados = data.filter(art => art.anio >= amin && art.anio <= amax && art.precio >= pmin && art.precio <= pmax);
     mostrarAutos(filtrados)
 }
 function reset(){
@@ -83,7 +82,12 @@ function reset(){
     anioMaximo.value=2024;
     precioMinimo.value=0;
     precioMaximo.value=100000000;
-    mostrarAutos(listaDeAutosJSON)
+    mostrarAutos(data)
 }
 
-mostrarAutos(listaDeAutosJSON)
+
+fetch('http://grupo11.alwaysdata.net/autos')
+  .then(response => response.json())
+  .then(data => mostrarAutos(data))
+
+  //mostrarAutos(listaDeAutos)
