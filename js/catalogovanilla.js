@@ -21,9 +21,7 @@ let listaDeAutos
 
 function mostrarAutos(listaJason){
     console.log (listaJason);
-    listaDeAutos = listaJason
-    console.log(listaDeAutos)
-
+    
     catDeAutos.innerHTML = ""
 
     if (listaJason.length === 0){
@@ -88,10 +86,15 @@ function reset(){
     cargarAutos()
 }
 
+function guardarDatos(data){
+    listaDeAutos = data
+    mostrarAutos(listaDeAutos)
+}
+
 function cargarAutos(){
     fetch('https://grupo11.alwaysdata.net/autos')
         .then(response => response.json())
-        .then(data => mostrarAutos(data))
+        .then(data => guardarDatos(data))
 }
 
 
