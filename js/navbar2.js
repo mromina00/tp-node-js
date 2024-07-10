@@ -8,6 +8,7 @@ let cad2 = `
           <li><a href="./nosotros.html">Sobre Nosotros</a></li>
           <li><a href="./catalogo.html">Vehículos</a></li>
           <li><a href="./contacto.html">Contacto</a></li>
+          <li><a href="./listadodeautos.html">CRUD</a></li>
         </ul>
         <!-- ícono menú desplegable -->
         <button class="navtoggle">
@@ -20,6 +21,7 @@ let cad2 = `
             <li><a href="./nosotros.html">Nosotros</a></li>
             <li><a href="./catalogo.html">Vehículos</a></li>
             <li><a href="./contacto.html">Contacto</a></li>
+            <li><a href="./listadodeautos.html">CRUD</a></li>
         </div>
     </div>
 `
