@@ -130,33 +130,34 @@
 						
 						<div class="form-group">
 							<label>Foto</label>
-							<input type="file" id="inputFotoAutoAdd" class="form-control" required>
+							<input type="file" id="inputFotoAutoEdit" class="form-control">
 						</div>
 						<div class="form-group">
 							<label>Nombre</label>
-							<input type="text" id="inputNombreAutoAdd" class="form-control" required>
+							<input type="text" id="inputNombreAutoEdit" class="form-control" required>
 						</div>
 						<div class="form-group">
 							<label>Descripcion</label>
-							<input type="text" id="inputDescripcionAutoAdd" class="form-control">
+							<input type="text" id="inputDescripcionAutoEdit" class="form-control">
 						</div>
 						<div class="form-group">
 							<label>Año</label>
-							<input type="number" id="inputAnioAutoAdd" class="form-control" required>
+							<input type="number" id="inputAnioAutoEdit" class="form-control" required>
 						</div>
 						<div class="form-group">
 							<label>Kilometraje</label>
-							<input type="number" id="inputKilometrajeAutoAdd" class="form-control">
+							<input type="number" id="inputKilometrajeAutoEdit" class="form-control" required>
 						</div>
 						<div class="form-group">
 							<label>Precio</label>
-							<input type="number" id="inputPrecioAutoAdd" class="form-control" required>
+							<input type="number" id="inputPrecioAutoEdit" class="form-control" required>
 						</div>
 						
 						
 						
 					</div>
 					<div class="modal-footer">
+						<input id="inputIDAutoAModificar" type="hidden">
 						<input type="button" class="btn btn-default" data-bs-dismiss="modal" value="Cancelar">
 						<input type="submit" class="btn btn-info" value="Actualizar">
 					</div>
@@ -197,6 +198,7 @@
 		crossorigin="anonymous"></script>
 		<script src="../js/listadoautos.js"></script>
 		<script src="../js/agregarauto.js"></script>
+		<script src="../js/modificarauto.js"></script>
 		<script src="../js/borrarauto.js"></script>
 		<script src="../js/crudmain.js"></script>
 		
